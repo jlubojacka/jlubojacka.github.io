@@ -1,0 +1,24 @@
+
+.repos {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  margin-bottom: 1em;
+}
+
+.repo__title {
+  text-decoration: none;
+  color: var(--link-color);
+  text-align: center;
+}
+
+.repo__title:hover {
+  color: var(--link-color-hover);
+}
+
+.repo__title h3 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+

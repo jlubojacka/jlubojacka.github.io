@@ -1,0 +1,24 @@
+.card {
+  box-shadow: 1px 3px 7px rgba(0,0,0,0.75);
+  border-radius: 1.5em;
+  overflow: hidden;
+}
+
+.card__start {
+  background-color: #daf5f5;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid var(--highlight-color);
+}
+.card__image {
+  width: 4em;
+  height: 4em;
+  vertical-align: middle;
+}
+
+
+.card__info {
+  padding: 0em 1.5em;
+  font-size: 0.9em;
+}

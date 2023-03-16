@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --text-color: #252525;
+  --link-color: #153e59;
+  --link-color-hover: #111111;
+  --shadow-color: rgb(18, 74, 122);
+  --highlight-color: #257494;
+
+}
+
+.page {
+  width: min-content;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.tab {
+  background-color: white;
+  border: 4px solid var(--shadow-color, black);
+  padding: 1.2em 2.5em;
+  margin: 0 2em;
+  font-family: NotoSansLao;
+  color: var(--text-color);
+}
+
+.tab__title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: var(--highlight-color, #257494);
+}
+
+.tab__subtitle {
+  margin: 0.5em 0;
+}
