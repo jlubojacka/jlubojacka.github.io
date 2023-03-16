@@ -11,6 +11,7 @@ import { EducationComponent } from './education/education.component';
 import { InterestsComponent } from './interests/interests.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CardComponent } from './card/card.component';
+import {HashLocationStrategy, Location, LocationStrategy} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,10 @@ import { CardComponent } from './card/card.component';
     AppRoutingModule,
     NgParticlesModule
   ],
-  providers: [],
+  /*  if you call location.go('/foo'), the browser's URL will become example.com#/foo
+  *   may solve 404 when manually changing URL in browser
+  * */
+  providers: [Location, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
